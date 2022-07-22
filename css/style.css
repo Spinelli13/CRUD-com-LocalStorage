@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anek Odia', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #f0a2a2;
+    --secundary-color: #f7cdcd;
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
+
+header h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(240, 162, 162,0.3);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 2px #CCC;
+    background-color: rgba(240, 162, 162,0.3);
+}
+
+.cabecalho-titulo {
+    padding: 10px;
+    color: #FFF;
+    font-size: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    flex-grow: 1;
+    margin: 8vh  auto;
+    padding: 50px;
+    box-shadow: 2px 2px 10px var(--shadow-color);
+    gap: 20px;
+    background-color: rgba(240, 162, 162,0.3);
+}
+ footer{
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    padding: 20px;
+ }
+
+ @media (max-width:480px){
+    .cabecalho{
+        position: fixed;
+        width: 100%;
+    }
+    .cabecalho-titulo{
+        font-size: 1.5rem;
+    }
+ 
+    main{
+        padding: 0;
+        margin: 20px 0 0 0;
+        width: 100%;
+        box-shadow: none;
+    }
+ }

@@ -1,0 +1,66 @@
+
+:root{
+    --primary-color: #f0a2a2;
+    --secundary-color: #f7cdcd;
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
+.table{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+
+
+.table th{
+    height: 50px;
+    background-color: var(--primary-color);
+    padding-left: 15px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.table td{
+    height: 50px;
+    padding-left: 12px;
+}
+
+.records th:last-child,
+.records td:last-child{
+    padding: 0px;
+    min-width: 140px;
+    text-align: center;
+}
+
+.table tr:hover{
+    background-color: var(--secundary-color);
+}
+
+@media(max-width:480px){
+    .table{
+        border-spacing: 5px;
+    }
+    
+    .table thead{
+        display: none;
+    }
+
+    .table tr{
+        box-shadow: 0 1px 3px var(--shadow-color);
+    }
+
+    .table td:not(:first-child){
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    .table td{
+        margin: 10px 0;
+    }
+
+    .table tr:hover{
+        background-color: inherit;
+    }
+
+}

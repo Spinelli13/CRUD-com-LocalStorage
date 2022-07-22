@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #f0a2a2;
+    --secundary-color: #f7cdcd;
+    --shadow-color: #CCC;
+    --text-color: #FFF;
+}
+
+.button {
+    border: none;
+    height: 40px;
+    background-color: var(--shadow-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+.button.cadastro {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(240, 162, 162);
+background: linear-gradient(0deg, rgba(240, 162, 162, 1) 0%, rgb(247, 205, 205) 100%);
+}
+.button.cadastro:hover {
+  color: #f0a2a2;
+  background: transparent;
+   box-shadow:none;
+}
+.button.cadastro:before,
+.button.cadastro:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0a2a2;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.button.cadastro:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.button.cadastro:hover:before,
+.button.cadastro:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+.button.green {
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.button.green:hover {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+
+.button.green span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.button.green:before,
+.button.green:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.button.green:before {
+    height: 0%;
+    width: .1px;
+}
+
+.button.green:after {
+    width: 0%;
+    height: .1px;
+}
+
+.button.green:hover:before {
+    height: 100%;
+}
+
+.button.green:hover:after {
+    width: 100%;
+}
+
+.button.green span:before,
+.button.green span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.button.green span:before {
+    width: .1px;
+    height: 0%;
+}
+
+.button.green span:after {
+    width: 0%;
+    height: .1px;
+}
+
+.button.green span:hover:before {
+    height: 100%;
+}
+
+.button.green span:hover:after {
+    width: 100%;
+}
+
+
+
+.button.red {
+  background-color: #9e0202;
+background-image: linear-gradient(315deg, #9e0202 0%, #da7d7d 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.button.red:hover{
+  background-color: #FF4949;
+background-image: linear-gradient(315deg, #FF4949 0%, #fd0000 74%);
+}
+.button.red span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.button.red:before,
+.button.red:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.button.red:before {
+  height: 0%;
+  width: .1px;
+}
+.button.red:after {
+  width: 0%;
+  height: .1px;
+}
+.button.red:hover:before {
+  height: 100%;
+}
+.button.red:hover:after {
+  width: 100%;
+}
+.button.red span:before,
+.button.red span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+.button.red span:before {
+  width: .1px;
+  height: 0%;
+}
+.button.red span:after {
+  width: 0%;
+  height: .1px;
+}
+.button.red span:hover:before {
+  height: 100%;
+}
+.button.red span:hover:after {
+  width: 100%;
+}
+
+
+.button:hover {
+    box-shadow: inset 200px 0 0 #00000055;
+}
+
+@media(max-width:480px) {
+    .button.mobile {
+        color: transparent;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+
+    .button.mobile::before {
+        content: "+";
+        color: black;
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+}
